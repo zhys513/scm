@@ -29,7 +29,6 @@ import cn.zhys513.common.cache.annotation.ReadThroughCache;
  * 
  */
 
-@Component
 public class RedisProvider extends CacheConfig implements CacheProvider {
 
     private static final Logger logger = Logger.getLogger(RedisProvider.class);

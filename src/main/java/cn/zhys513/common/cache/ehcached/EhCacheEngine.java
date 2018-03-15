@@ -6,15 +6,15 @@ package cn.zhys513.common.cache.ehcached;
 
 import java.io.Serializable;
 
-import org.apache.log4j.Logger;
-import org.springframework.stereotype.Component;
-
-import cn.zhys513.common.cache.CacheConfig;
-import cn.zhys513.common.cache.CacheEngine;
 import net.sf.ehcache.Cache;
 import net.sf.ehcache.CacheException;
 import net.sf.ehcache.CacheManager;
 import net.sf.ehcache.Element;
+
+import org.apache.log4j.Logger;
+
+import cn.zhys513.common.cache.CacheConfig;
+import cn.zhys513.common.cache.CacheEngine;
 
 /**
  * <p>EhCacheEngine引擎<p/> 
@@ -22,7 +22,7 @@ import net.sf.ehcache.Element;
  * @author zhys(13960826213@139.com)
  * @created 2012-4-18
  */
-@Component("ehCache")
+//@Component("ehCache")
 public class EhCacheEngine  extends CacheConfig implements CacheEngine {
 
     private static final Logger log = Logger.getLogger(EhCacheEngine.class);

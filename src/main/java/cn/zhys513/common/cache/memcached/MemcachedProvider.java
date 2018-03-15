@@ -6,15 +6,15 @@ package cn.zhys513.common.cache.memcached;
 
 import javax.annotation.Resource;
 
+import net.spy.memcached.CASValue;
+import net.spy.memcached.MemcachedClient;
+
 import org.apache.log4j.Logger;
-import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
 import cn.zhys513.common.cache.CacheConfig;
 import cn.zhys513.common.cache.CacheProvider;
 import cn.zhys513.common.cache.annotation.ReadThroughCache;
-import net.spy.memcached.CASValue;
-import net.spy.memcached.MemcachedClient;
 
 /**
  * MemcachedProvider
@@ -23,7 +23,6 @@ import net.spy.memcached.MemcachedClient;
  * 
  */
 
-@Component
 public class MemcachedProvider extends CacheConfig implements CacheProvider {
 
     private static final Logger logger = Logger.getLogger(MemcachedProvider.class);
