@@ -184,9 +184,7 @@
 				<configuration>
 					<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
 					<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
-					<archive>
-						<addMavenDescriptor>false</addMavenDescriptor>
-					</archive>
+					<addMavenDescriptor>false</addMavenDescriptor>
 				</configuration>
 			</plugin>
 			<!-- 生成sources源码包的插件 -->
